@@ -6,3 +6,10 @@ root-r1.crt
 GlobalSign Root CA
 exp date 2028
 https://valid.r1.roots.globalsign.com/
+
+
+GlobalSign Root CA
+openssl s_client -showcerts -connect 108.177.15.109:993 -servername imap.gmail.com
+
+GlobalSign (GlobalSign Root CA - R2)
+openssl s_client -showcerts -connect imap.gmail.com:993
