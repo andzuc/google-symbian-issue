@@ -1,12 +1,16 @@
-ipdump.pcap
+ipdump_20210710.pcap:
 TLS captured conversation between: Nokia C5-00.2 <-> imap.gmail.com
+Problem: Root CA certificate expired
+Using: Nokia Connectivity Analyzer
+
+ipdump_20211111.pcap:
+Problem: Google disabled IMAP protocol simple auth for cellular operators networks
 Using: Nokia Connectivity Analyzer
 
 root-r1.crt
 GlobalSign Root CA
 exp date 2028
 https://valid.r1.roots.globalsign.com/
-
 
 GlobalSign Root CA
 openssl s_client -showcerts -connect 108.177.15.109:993 -servername imap.gmail.com
